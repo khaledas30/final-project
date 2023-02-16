@@ -42,7 +42,7 @@ terraform init
 ```
 terraform plan
 ```
-#### 5. Apply the plan *it will take some time to complete*
+#### 5. Apply the plan 
 ```
 terraform apply
 ```
