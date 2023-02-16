@@ -1,9 +1,9 @@
 # Final Project 
 ## Requirements
 Deploy a nodejs application on GKE using CI/CD Jenkins Pipeline :
-1- create a private gke cluster and connecting the cluster by subnet private 
-2- After creating the cluster deploy and configure Jenkins on it 
-3- The final steps is deploy the backend application on GKE using the Jenkins pipeline
+> - 1- create a private gke cluster and connecting the cluster by subnet private 
+> - 2- After creating the cluster deploy and configure Jenkins on it 
+> - 3- The final steps is deploy the backend application on GKE using the Jenkins pipeline
 
 ## Tools
 > - Terraform
@@ -63,7 +63,7 @@ sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 - Create Dockerfile to install gcloud inside it 
 > - docker build -t <name> .
 - Then push this image to dockerhub and using this image at deploy the jenkins container 
-![](./Screenshots/dockerhub.png)
+![Alt text](Screenshots/dockerhub.png)
 
 ## Apply Deployments To GKE
 
@@ -81,16 +81,16 @@ kubectl create -f service.yml
 kubectl get all
 ```
 
-![](./Screenshots/deploy.png)
+![Alt text](Screenshots/deploy.png)
 - Copy load-balancer IP followed by Port
 - git the credential of jenkins by using command 
 > - kubectl logs [podname] -n [namespace]
 
-![](./Screenshots/logs.png)
+![Alt text](Screenshots/logs.png)
 
 
 
-![](./Screenshots/jenkins.png)
+![Alt text](Screenshots/jenkins.png)
 
 ## create nodejs app
 > - create docker file to build image in this app and use it in the pipline 
@@ -103,7 +103,7 @@ kubectl get all
 ### Create two credentials 
 > - creadential for dockerhub that pull image inside pipeline 
 > - creadential for service accpunt (vm instance) that give to it [roles/container.admin] 
-![](./Screenshots/credentials.png)
+![Alt text](Screenshots/credentials.png)
 
 ### Create Jenkinsfile
 
@@ -125,9 +125,9 @@ Created a Jenkinsfile with continuous integration (CI) and continuous deployment
 
 > - the pod that contain jenkins and the pod that contain the app created in the GKE cluster 
 
-![](./Screenshots/workload.png)
-![](./Screenshots/svc-ingress.png)
+![Alt text](Screenshots/workload.png)
+![Alt text](Screenshots/svc-ingress.png)
 
 ### The application 
 
-![](./Screenshots/app.png)
+![Alt text](Screenshots/app.png)
