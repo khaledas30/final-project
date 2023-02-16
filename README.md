@@ -66,7 +66,7 @@ sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 ## image 
 - Create Dockerfile to install gcloud inside it 
 > - docker build -t <name> .
-- Then push this image to dockerhub and using this image at deploy the jenkins container 
+> - Then push this image to dockerhub and using this image at deploy the jenkins container 
 
 ![Alt text](./screenshots/dockerhub.png)
 
@@ -87,12 +87,12 @@ kubectl get all
 ```
 
 ![Alt text](./screenshots/deploy.png)
-- Copy load-balancer IP followed by Port
 - git the credential of jenkins by using command 
 > - kubectl logs [podname] -n [namespace]
 
 ![Alt text](./screenshots/logs.png)
 
+- Copy load-balancer IP followed by Port
 
 
 ![Alt text](screenshots/jenkins.png)
