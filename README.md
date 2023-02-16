@@ -67,7 +67,8 @@ sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 - Create Dockerfile to install gcloud inside it 
 > - docker build -t <name> .
 - Then push this image to dockerhub and using this image at deploy the jenkins container 
-![Alt text](Screenshots/dockerhub.png)
+
+- ![Alt text](Screenshots/dockerhub.png)
 
 ## Apply Deployments To GKE
 
