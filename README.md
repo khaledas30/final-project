@@ -76,7 +76,7 @@ sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 > - [gcloud container clusters get-credentials project-cluster --zone us-central1-a --project abde-367812] 
 
 
-## Apply the jenkins in the JKe 
+## Apply jenkins in the GKe 
 
 - create file yaml using this image created above , install docker and kubernets inside jenkins container 
 ```bash
