@@ -42,6 +42,10 @@ terraform init
 ```
 terraform plan
 ```
+#### 5. Apply the plan *it will take some time to complete*
+```
+terraform apply
+```
 ## download cli and kubctl inside the vm instance 
 ```bash
 sudo apt-get install  -y apt-transport-https ca-certificates gnupg
