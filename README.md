@@ -86,6 +86,9 @@ kubectl get all
 - git the credential of jenkins by using command 
 > - kubectl logs [podname] -n [namespace]
 
+![](./Screenshots/logs.png)
+
+
 
 ![](./Screenshots/jenkins.png)
 
@@ -100,7 +103,7 @@ kubectl get all
 ### Create two credentials 
 > - creadential for dockerhub that pull image inside pipeline 
 > - creadential for service accpunt (vm instance) that give to it [roles/container.admin] 
-![Alt text](Screenshot from 2023-02-16 21-27-32.png)
+![](./Screenshots/credentials.png)
 
 ### Create Jenkinsfile
 
@@ -122,10 +125,9 @@ Created a Jenkinsfile with continuous integration (CI) and continuous deployment
 
 > - the pod that contain jenkins and the pod that contain the app created in the GKE cluster 
 
-![Alt text](Screenshot from 2023-02-16 22-01-10.png)
-
-![Alt text](Screenshot from 2023-02-16 22-02-52.png)
+![](./Screenshots/workload.png)
+![](./Screenshots/svc-ingress.png)
 
 ### The application 
 
-![Alt text](Screenshot from 2023-02-16 22-06-39.png)
+![](./Screenshots/app.png)
