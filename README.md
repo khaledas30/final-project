@@ -1,9 +1,9 @@
 # Final Project 
 ## Requirements
 Deploy a nodejs application on GKE using CI/CD Jenkins Pipeline :
-> - 1- create a private gke cluster and connecting the cluster by subnet private 
-> - 2- After creating the cluster deploy and configure Jenkins on it 
-> - 3- The final steps is deploy the backend application on GKE using the Jenkins pipeline
+> - create a private gke cluster and connecting the cluster by subnet private 
+> - After creating the cluster deploy and configure Jenkins on it 
+> - The final steps is deploy the backend application on GKE using the Jenkins pipeline
 
 ## Tools
 > - Terraform
