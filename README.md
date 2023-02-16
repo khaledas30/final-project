@@ -68,7 +68,7 @@ sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 > - docker build -t <name> .
 - Then push this image to dockerhub and using this image at deploy the jenkins container 
 
-- ![Alt text](Screenshots/dockerhub.png)
+- ![Alt text](./screenshots/dockerhub.png)
 
 ## Apply Deployments To GKE
 
@@ -86,16 +86,16 @@ kubectl create -f service.yml
 kubectl get all
 ```
 
-![Alt text](Screenshots/deploy.png)
+![Alt text](./screenshots/deploy.png)
 - Copy load-balancer IP followed by Port
 - git the credential of jenkins by using command 
 > - kubectl logs [podname] -n [namespace]
 
-![Alt text](Screenshots/logs.png)
+![Alt text](./screenshots/logs.png)
 
 
 
-![Alt text](Screenshots/jenkins.png)
+![Alt text](screenshots/jenkins.png)
 
 ## create nodejs app
 > - create docker file to build image in this app and use it in the pipline 
@@ -108,7 +108,7 @@ kubectl get all
 ### Create two credentials 
 > - creadential for dockerhub that pull image inside pipeline 
 > - creadential for service accpunt (vm instance) that give to it [roles/container.admin] 
-![Alt text](Screenshots/credentials.png)
+![Alt text](./screenshots/credentials.png)
 
 ### Create Jenkinsfile
 
@@ -130,9 +130,9 @@ Created a Jenkinsfile with continuous integration (CI) and continuous deployment
 
 > - the pod that contain jenkins and the pod that contain the app created in the GKE cluster 
 
-![Alt text](Screenshots/workload.png)
-![Alt text](Screenshots/svc-ingress.png)
+![Alt text](./screenshots/workload.png)
+![Alt text](./screenshots/svc-ingress.png)
 
 ### The application 
 
-![Alt text](Screenshots/app.png)
+![Alt text](./screenshots/app.png)
